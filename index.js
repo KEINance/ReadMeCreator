@@ -1,9 +1,9 @@
 //add inquirer and fs require
 const inquirer = require('inquirer');
 const fs = require('fs');
+const { title } = require('process');
 // add const for prompt titles
 //add badge here for README
-const generateReadMe = ({ github, email, repo, license, description, content, descrepancies, test, userknow, contributing }) => 
 
 // !!!!!!!!
 // Usage, and Questions
@@ -12,6 +12,9 @@ const generateReadMe = ({ github, email, repo, license, description, content, de
 
 
 // select questions for console prompts
+const generateReadMe = ({ github, email, repo, license, description, content, descrepancies, test, userknow, contributing }) => 
+
+// const questions = [
 inquirer.prompt([
     {
         name: 'github',
@@ -32,7 +35,7 @@ inquirer.prompt([
         name: "license",
         message: "What license will you be adding?",
         type: 'list',
-        choices: ['None', 'MIT', 'Apache']
+        choices: ['None', 'MIT', 'Apache'],
     },
     {
         name: "description",
@@ -65,61 +68,72 @@ inquirer.prompt([
         type: 'input',
     }
 ])
-// read responce and add README file
-.then(response => {
-    const readMePageContent = generateReadMe(response)
-    fs.writeFile("README.md", readMePageContent, (err) => {
-        err ? console.log(err) : 
-        console.log("File saved!");
-      });
+
+.then((questions) => {
+    const readMePageContent = generateReadMe(questions);
+    fs.writeFile('README.md', readMePageContent, err => err ? console.error(err) : console.log('Eureka!!'))
 });
+
+
+// TODO: Include packages needed for this application
+// read responce and add README file
+// TODO: Create a function to write README file
+// function writeToFile(fileName, data) {}
+
+
+// own funct
+// TODO: Create a function to initialize app
+// function init () {
+//     fs.writeFile('README.md', readMePageContent, err => err ? console.error(err) : console.log('Eureka!!'))
+// }
+
+// Function call to initialize app
+// init ();
 
 
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(license) {}
-
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-function renderLicenseLink(license) {} 
-
-
-
 // template literals in {}
-
-
-
-
+function renderLicenseBadge(license) {
+    let badge = ''
+    if (license === 'MIT') {
+        badge = `[license] (https://img.shields.io/badge/License-MIT-yellow.svg)`
+    } else if (license === 'Apache') {
+        badge = `[license] (https://img.shields.io/badge/License-Apache_2.0-blue.svg)`
+    } else (license === 'None') {
+        badge = ''
+    }
+    return badge;
+}
 
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(license) {}
+// function renderLicenseSection(license) {}
 
 // TODO: Create a function to generate markdown for README
-function generateMarkdown(data) {
-  return `# ${data.title}
+// function generateMarkdown(data) {
+//   return `
+//         # ${data.title}
+//         # ${title}
+//         ${badge}
 
-`;
-}
+//         ## Description
 
-module.exports = generateMarkdown;
+//         ## USERSTORY
 
+//         ##ACCEPTANCE CRITERIA
 
+//         ##Table of Contents
 
+//         ##Installation
 
+//         ##Usage
 
+//         ##Usage
 
-// TODO: Include packages needed for this application
+//         ##Contributing
+//     `;
+// }
 
-// TODO: Create an array of questions for user input
-const questions = [];
-
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
-
-// TODO: Create a function to initialize app
-function init() {}
-
-// Function call to initialize app
-init();
+// module.exports = generateMarkdown;
