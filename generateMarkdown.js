@@ -14,18 +14,27 @@ function renderLicenseBadge(license) {
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) {} 
-
-
+function renderLicenseLink(license) {
+  license !== 'none' ? '= [License](license)': ''
+} 
 
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(license) {}
+function renderLicenseSection(license) {
+  if (license !== 'none') {
+    return {
+      ` # License
+      Project is licensed under the ${license} license.
+      `
+    }
+  }
+  return '';
+};
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  return `# ${data.repo}
+  return `# ${data.user.name}
     # ${title}
         ${badge}
 
@@ -51,8 +60,10 @@ function generateMarkdown(data) {
   ##Installation
     Please, see ${data.renderLicenseSection(data.license)} to recieve more information about this lisence.
   
-    ##Usage
+  ##Usage
     ${data.usage}
+
+  $
 
   ##Contributing
     ${data.contributing}
@@ -61,7 +72,7 @@ function generateMarkdown(data) {
     ${data.tests}
 
   ##Questions
-  For additional queries, please, reach out via:
+  For additional queries regarding this repository, please, reach out via:
   Github: [${data.github}] (https://github.com/${data.github})
   Email: ${data.email}
 `;

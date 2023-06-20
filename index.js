@@ -1,20 +1,16 @@
 //add inquirer and fs require
 const inquirer = require('inquirer');
 const fs = require('fs');
-const { title } = require('process');
-// add const for prompt titles
-//add badge here for README
+
+// add markdown link
+const generateMarkdown = require('./generateMarkdown.js')
 
 // !!!!!!!!
 // Usage, and Questions
 // usage????? 
 // questions????
 
-
 // select questions for console prompts
-const generateReadMe = ({ github, email, repo, license, description, content, descrepancies, test, userknow, contributing }) => 
-
-// const questions = [
 inquirer.prompt([
     {
         name: 'github',
@@ -40,6 +36,11 @@ inquirer.prompt([
     {
         name: "description",
         message: "What is a short description of your repository?",
+        type: 'input',
+    },
+    {
+        name: "acceptance",
+        message: "What is a short acceptance criteria of your repository?",
         type: 'input',
     },
     {
@@ -69,7 +70,9 @@ inquirer.prompt([
     }
 ])
 
+//population of question content
 .then((questions) => {
-    const readMePageContent = generateReadMe(questions);
-    fs.writeFile('README.md', readMePageContent, err => err ? console.error(err) : console.log('Eureka!!'))
+    const readMePageContent = generateMarkdown(questions);
+    fs.writeFile('README.md', readMePageContent, 
+    (err) => err ? console.error(err) : console.log('Eureka!!'))
 });
