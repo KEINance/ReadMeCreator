@@ -32,7 +32,8 @@ function renderLicenseSection(license) {
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  return `# ${data.github}
+  return `
+  ## ${data.github}
 ${renderLicenseBadge(data.license)}
 
   ## Description
@@ -41,10 +42,10 @@ ${renderLicenseBadge(data.license)}
   ## USERSTORY
     ${data.userStory}
 
-  ##ACCEPTANCE CRITERIA
+  ## ACCEPTANCE CRITERIA
     ${data.acceptance}
 
-  ##Table of Contents
+  ## Table of Contents
   1. [Description](#description)
   2. [Installation](#installation)
   3. [Usage](#usage)
@@ -54,21 +55,20 @@ ${renderLicenseBadge(data.license)}
   ${renderLicenseLink(data.license)}
   8. [Questions](#questions)
 
-  ##Installation
-    Please, see ${data.renderLicenseSection(data.license)} to recieve more information about this lisence.
+  ## Installation
+    Please, see ${renderLicenseSection(data.license)} to recieve more information about this lisence.
   
-  ##Usage
+  ## Usage
     ${data.usage}
 
-  $
 
-  ##Contributing
+  ## Contributing
     ${data.contributing}
 
-  ##Tests
+  ## Tests
     ${data.tests}
 
-  ##Questions
+  ## Questions
   For additional queries regarding this repository, please, reach out via:
   Github: [${data.github}] (https://github.com/${data.github})
   Email: ${data.email}
