@@ -1,16 +1,21 @@
 
-  ## k
-[license] (https://img.shields.io/badge/License-Apache_2.0-blue.svg)
+  ## GitHub User
+  kein
+  
+  ## kea
+  
+  ## License 
+  kea is licensed under [license] (https://img.shields.io/badge/License-MIT-yellow.svg).
 
   ## Description
-    k
-
+  neif
+  
   ## USERSTORY
-    undefined
-
+  vrfew
+  
   ## ACCEPTANCE CRITERIA
-    k
-
+  dfgvhnjkml
+  
   ## Table of Contents
   1. [Description](#description)
   2. [Installation](#installation)
@@ -18,25 +23,26 @@
   4. [Contributing](#contributing)
   5. [Video](#video)
   6. [Tests](#tests)
-  undefined
+  7. undefined
   8. [Questions](#questions)
-
-  ## Installation
-    Please, see  # License
-      Project is licensed under the Apache license.
-       to recieve more information about this lisence.
   
-  ## Usage
-    undefined
+  
+  ## Installation
+    Please, run npmi  in terminal for download. 
+    See  # License
+      Project is licensed under the MIT license.
+       to recieve more information about this lisence.
+    
+  ## Tests
+    Please, run command node index.js in terminal to run code.
 
+  ## Usage
+    kea is easiest to use when installed with gvhjk
 
   ## Contributing
-    k
-
-  ## Tests
-    undefined
+    dfgyh
 
   ## Questions
   For additional queries regarding this repository, please, reach out via:
-  Github: [k] (https://github.com/k)
-  Email: k
+  Github: [kein] (https://github.com/kein)
+  Email: neik

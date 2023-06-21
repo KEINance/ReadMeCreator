@@ -39,13 +39,13 @@ inquirer.prompt([
         type: 'input',
     },
     {
-        name: "acceptance",
-        message: "What is a short acceptance criteria of your repository?",
+        name: "story",
+        message: "What is the user story of your repository?",
         type: 'input',
     },
     {
-        name: "content",
-        message: "Please, provide list of table of contents?",
+        name: "acceptance",
+        message: "What is a short acceptance criteria of your repository?",
         type: 'input',
     },
     {
@@ -60,6 +60,11 @@ inquirer.prompt([
     },
     {
         name: "userknow",
+        message: "What should the user know about this project?",
+        type: 'input',
+    },
+    {
+        name: "usage",
         message: "What should the user know about this project?",
         type: 'input',
     },
