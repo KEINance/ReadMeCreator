@@ -73,6 +73,6 @@ inquirer.prompt([
 //population of question content
 .then((questions) => {
     const readMePageContent = generateMarkdown(questions);
-    fs.writeFile('README.md', readMePageContent, 
+    fs.writeFile('./GeneratedResults/README.md', readMePageContent, 
     (err) => err ? console.error(err) : console.log('Eureka!!'))
 });

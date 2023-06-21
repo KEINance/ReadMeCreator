@@ -44,7 +44,7 @@ function generateMarkdown(data) {
   7. [Usage](#usage)
   8. [Contributing](#contributing)
   9. [Questions](#questions)
-  
+
   ## License 
   ${data.repo} is licensed under ${renderLicenseBadge(data.license)}.
 
@@ -71,7 +71,8 @@ function generateMarkdown(data) {
   ## Contributing
     ${data.contributing}
 
-  ## Mock Up
+  ## Mock Up/Video Demo
+  
   ![readmeimg](./assets/readmegen.png)
 
   ## Questions
