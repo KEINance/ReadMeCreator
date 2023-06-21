@@ -34,6 +34,17 @@ function generateMarkdown(data) {
   
   ## ${data.repo}
   
+  ## Table of Contents
+  1. ${renderLicenseLink(data.license)}
+  2. [Description](#description)
+  3. [UserStory](#story)
+  4. [AcceptanceCriteria](#acceptance)
+  5. [Installation](#installation)
+  6. [Tests](#tests)
+  7. [Usage](#usage)
+  8. [Contributing](#contributing)
+  9. [Questions](#questions)
+  
   ## License 
   ${data.repo} is licensed under ${renderLicenseBadge(data.license)}.
 
@@ -46,16 +57,6 @@ function generateMarkdown(data) {
   ## ACCEPTANCE CRITERIA
   ${data.acceptance}
   
-  ## Table of Contents
-  1. ${renderLicenseLink(data.license)}
-  2. [Description](#description)
-  3. [UserStory](#story)
-  4. [AcceptanceCriteria](#acceptance)
-  5. [Installation](#installation)
-  6. [Tests](#tests)
-  7. [Usage](#usage)
-  8. [Contributing](#contributing)
-  9. [Questions](#questions)
 
   ## Installation
     Please, run ${data.dependancies} in terminal for download. ${renderLicenseSection(data.license)}
