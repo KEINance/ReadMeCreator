@@ -5,11 +5,6 @@ const fs = require('fs');
 // add markdown link
 const generateMarkdown = require('./generateMarkdown.js')
 
-// !!!!!!!!
-// Usage, and Questions
-// usage????? 
-// questions????
-
 // select questions for console prompts
 inquirer.prompt([
     {
@@ -65,7 +60,7 @@ inquirer.prompt([
     },
     {
         name: "usage",
-        message: "What should the user know about this project?",
+        message: "What is the best practice for usage in this project?",
         type: 'input',
     },
     {
