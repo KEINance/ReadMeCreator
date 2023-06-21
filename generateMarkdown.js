@@ -3,9 +3,9 @@
 function renderLicenseBadge(license) {
     let badge = ''
     if (license === 'MIT') {
-        badge = `[license] (https://img.shields.io/badge/License-MIT-yellow.svg)`
+        badge = `![license](https://img.shields.io/badge/License-MIT-yellow.svg)`
     } else if (license === 'Apache') {
-        badge = `[license] (https://img.shields.io/badge/License-Apache_2.0-blue.svg)`
+        badge = `![license](https://img.shields.io/badge/License-Apache_2.0-blue.svg)`
     } else {
         badge = ''
     }; 
@@ -15,15 +15,14 @@ function renderLicenseBadge(license) {
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
-  license !== 'None' ? '= [License](license)': ''
+  license !== 'None' ? '[License](#license)' : ''
 } 
-
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
   if (license !== 'None') {
-    return ` # License
+    return `
       Project is licensed under the ${license} license.
       `
   }
@@ -59,12 +58,10 @@ function generateMarkdown(data) {
   6. [Tests](#tests)
   7. ${renderLicenseLink(data.license)}
   8. [Questions](#questions)
-  
-  console.log(${renderLicenseBadge(data.license)})
-  
+
   ## Installation
-    Please, run ${data.dependancies} in terminal for download. 
-    See ${renderLicenseSection(data.license)} to recieve more information about this lisence.
+    Please, run ${data.dependancies} in terminal for download. ${renderLicenseSection(data.license)}
+    See ${renderLicenseBadge(data.license)} to recieve more information about this license.
     
   ## Tests
     Please, run command ${data.test} in terminal to run code.

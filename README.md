@@ -1,20 +1,20 @@
 
   ## GitHub User
-  kein
+  k
   
-  ## kea
+  ## k
   
   ## License 
-  kea is licensed under [license] (https://img.shields.io/badge/License-MIT-yellow.svg).
+  k is licensed under ![license](https://img.shields.io/badge/License-MIT-yellow.svg).
 
   ## Description
-  neif
+  k
   
   ## USERSTORY
-  vrfew
+  k
   
   ## ACCEPTANCE CRITERIA
-  dfgvhnjkml
+  k
   
   ## Table of Contents
   1. [Description](#description)
@@ -25,24 +25,23 @@
   6. [Tests](#tests)
   7. undefined
   8. [Questions](#questions)
-  
-  
+
   ## Installation
-    Please, run npmi  in terminal for download. 
-    See  # License
+    Please, run k in terminal for download. 
       Project is licensed under the MIT license.
-       to recieve more information about this lisence.
+      
+    See ![license](https://img.shields.io/badge/License-MIT-yellow.svg) to recieve more information about this license.
     
   ## Tests
-    Please, run command node index.js in terminal to run code.
+    Please, run command k in terminal to run code.
 
   ## Usage
-    kea is easiest to use when installed with gvhjk
+    k is easiest to use when installed with 
 
   ## Contributing
-    dfgyh
+    
 
   ## Questions
   For additional queries regarding this repository, please, reach out via:
-  Github: [kein] (https://github.com/kein)
-  Email: neik
+  Github: [k] (https://github.com/k)
+  Email: k
