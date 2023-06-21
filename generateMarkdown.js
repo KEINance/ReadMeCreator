@@ -73,6 +73,9 @@ function generateMarkdown(data) {
   ## Contributing
     ${data.contributing}
 
+  ## Mock Up
+  ![readmeimg](./assets/readmegen.png)
+
   ## Questions
   For additional queries regarding this repository, please, reach out via:
   Github: [${data.github}] (https://github.com/${data.github})

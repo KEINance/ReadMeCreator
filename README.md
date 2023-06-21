@@ -24,9 +24,8 @@
   5. [Installation](#installation)
   6. [Tests](#tests)
   7. [Usage](#usage)
-  8. [Video](#video)
-  9. [Contributing](#contributing)
-  10. [Questions](#questions)
+  8. [Contributing](#contributing)
+  9. [Questions](#questions)
 
   ## Installation
     Please, run  in terminal for download. 
@@ -40,6 +39,9 @@
 
   ## Contributing
     
+
+  ## Mock Up
+  ![readmeimg](./assets/readmegen.png)
 
   ## Questions
   For additional queries regarding this repository, please, reach out via:
