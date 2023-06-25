@@ -1,8 +1,8 @@
 
   ## GitHub User
-  k
+  keinance
   
-  ## k
+  ## repo
   
   ## Table of Contents
   1. [License](#license)
@@ -16,34 +16,34 @@
   9. [Questions](#questions)
 
   ## License 
-  k is licensed under ![license](https://img.shields.io/badge/License-Apache_2.0-blue.svg).
+  repo is licensed under ![license](https://img.shields.io/badge/License-MIT-yellow.svg).
 
   ## Description
-  k
+  this makes readme
   
   ## USERSTORY
-  k
+  creates read me
   
   ## ACCEPTANCE CRITERIA
-  k
+  will make creating repos easier
   
 
   ## Installation
-    Please, run k in terminal for download. 
-      Project is licensed under the Apache license.
+    Please, run npm i in terminal for download. 
+      Project is licensed under the MIT license.
       
-    See ![license](https://img.shields.io/badge/License-Apache_2.0-blue.svg) to recieve more information about this license.
+    See ![license](https://img.shields.io/badge/License-MIT-yellow.svg) to recieve more information about this license.
     
   ## Tests
-    Please, run command k in terminal to run code.
+    Please, run command npm run test in terminal to run code.
 
   ## Usage
-    k is easiest to use when installed with k
+    repo is easiest to use when installed with 
 
   ## Contributing
-    k
+    You can
 
   ## Questions
   For additional queries regarding this repository, please, reach out via:
-  Github: [k] (https://github.com/k)
-  Email: k
+  Github: [keinance] (https://github.com/keinance)
+  Email: keinance2
